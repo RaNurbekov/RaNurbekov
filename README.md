@@ -1,74 +1,128 @@
-<h1 align="center">Привет! 👋 Я Рашид — Machine Learning & MLOps Engineer</h1>
+<div align="center">
 
-<h3 align="center">Специализируюсь на разработке, оптимизации и выводе ML-моделей в Production (Fintech, LLMs, RecSys)</h3>
+# Привет, я Рашид 👋
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=RaNurbekov&label=Profile%20views&color=0e75b6&style=flat" alt="RaNurbekov" />
-</p>
+### ML Engineer | Fintech & Generative AI
 
----
+*Строю ML-сервисы для финтеха — от обучения модели до деплоя в Docker*
 
-### 👨‍💻 Обо мне
-Я инженер машинного обучения, сфокусированный на полном цикле разработки: от глубокого анализа данных до архитектуры деплоя (FastAPI, Docker, Redis). Моя главная страсть — **Fintech-продукты** и **Generative AI**. 
+[![Profile Views](https://komarev.com/ghpvc/?username=RaNurbekov&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/RaNurbekov)
+[![Telegram](https://img.shields.io/badge/Telegram-@Ytyglika-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/Ytyglika)
+[![Email](https://img.shields.io/badge/Email-nurbekovrashidjob@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:nurbekovrashidjob@gmail.com)
 
-Я не просто обучаю модели в Jupyter Notebook. Я строю надежные, масштабируемые и интерпретируемые пайплайны, готовые к работе в реальном бизнесе.
-
----
-
-### 🛠 Мой технологический стек
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-  <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
-  <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" />
-</p>
+</div>
 
 ---
 
-### 💼 Портфолио (Production-Ready проекты)
+## 👨‍💻 Обо мне
 
-#### 1. 🛡️[Hybrid Anti-Fraud System (ML + Redis)]((https://github.com/RaNurbekov/anti_fraud_api_2))
-Микросервисная архитектура для мгновенного детектирования мошенничества. 
-* **Технологии:** LightGBM, Redis (Feature Store), Docker Compose, FastAPI.
-* **Фичи:** Решена проблема Class Imbalance. Реализован A/B Testing Router для безопасного сплита трафика между Champion/Challenger моделями.
+Я ML-инженер с фокусом на **финтех-продукты** и **Generative AI**. Специализируюсь на полном цикле разработки: глубокий анализ данных → обучение и оптимизация моделей → production-деплой через FastAPI + Docker.
 
-#### 2. 🏦 [Credit Scoring API with Advanced MLOps]([https://github.com/RaNurbekov/credit-scoring-ml-api.])
-Полный цикл кредитного скоринга для финтеха.
-* **Технологии:** MLflow, Evidently AI, GitHub Actions (CI/CD), SHAP.
-* **Фичи:** Настроен автоматический мониторинг Data Drift. Модель загружается динамически из Model Registry. Реализован Explainable AI (SHAP) для интерпретации отказов по кредитам.
+Не просто обучаю модели в Jupyter — строю надёжные, интерпретируемые и масштабируемые пайплайны, готовые к реальному бизнесу.
 
-#### 3. 🤖 [Autonomous Financial AI Agent] (https://github.com/RaNurbekov/ai_financial_bot)
-ИИ-агент финансового аналитика на базе концепции Tool Calling.
-* **Технологии:** LangGraph, Llama-3 (Groq API), DuckDuckGo Search.
-* **Фичи:** Агент способен автономно принимать решения: искать свежие новости в интернете или использовать кастомные Python-функции (ипотечный калькулятор) для ответа пользователю.
-
-#### 4. 💳[Bank Transaction NLP Categorizer](https://github.com/RaNurbekov/Transaction-Categorizer-Deep-Learning-PyTorch-Hugging-Face-NLP-)
-Система автоматической категоризации "грязных" банковских транзакций (PFM).
-* **Технологии:** PyTorch, Hugging Face (`transformers`, `datasets`), DistilBERT.
-* **Фичи:** Fine-Tuning многоязычной архитектуры DistilBERT под задачу Sequence Classification. Модель устойчива к опечаткам, латинице и шумам для точной разбивки расходов клиента.
-
-#### 5. 💬[LLM RAG Support Bot]((https://github.com/RaNurbekov/llm_bot-ai_bank_assistant-))
-Интеллектуальный консультант для поддержки клиентов.
-* **Технологии:** Llama-3, RAG-архитектура, Streamlit Session State.
-* **Фичи:** Жесткий Hallucination Prevention (предотвращение выдумывания фактов). Бот отвечает строго по корпоративной базе знаний.
-
-#### 6. 👁️ [Computer Vision: Object Detection] (https://github.com/RaNurbekov/computer_vision_simple_sample)
-Веб-приложение для видеоаналитики в реальном времени.
-* **Технологии:** YOLOv8 (Ultralytics), OpenCV, Zero-Shot Inference.
-* **Фичи:** Парсинг Bounding Boxes и генерация бизнес-статистики по объектам на зашумленных фотографиях.
+**Ключевые области:**
+- 🏦 **Fintech ML** — кредитный скоринг, антифрод, PFM-категоризация транзакций
+- 🤖 **LLM & RAG** — разработка AI-агентов и интеллектуальных ботов поддержки
+- ⚙️ **MLOps** — CI/CD для моделей, мониторинг Data Drift, A/B тестирование
 
 ---
 
-### 📫 Как со мной связаться
-- **Email:** nurbekovrashidjob@gmail.com
-- **Telegram:** @Ytyglika
+## 🛠 Технологический стек
 
-<br/>
-<p align="center">
-  <i>"Превращаю данные в бизнес-решения"</i>
-</p>
+**Machine Learning**
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-02569B?style=for-the-badge&logoColor=white)
+![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
+![SHAP](https://img.shields.io/badge/SHAP-Explainable_AI-8A2BE2?style=for-the-badge)
+
+**LLM & Vector Search**
+
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq_API_(Llama_3)-F55036?style=for-the-badge&logoColor=white)
+
+**Backend & DevOps**
+
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+---
+
+## 💼 Портфолио
+
+### 🛡️ [Anti-Fraud Transaction API](https://github.com/RaNurbekov/fraud-detection-api)
+> **Гибридная микросервисная система детектирования мошенничества в реальном времени**
+
+Двухслойная архитектура: Redis Velocity Check (защита от брутфорса) + LightGBM (поведенческие паттерны). Встроенный **A/B Testing Router** распределяет трафик 80/20 между Champion и Challenger моделями для безопасного тестирования гипотез в продакшне.
+
+`LightGBM` `Redis Feature Store` `Docker Compose` `FastAPI` `A/B Testing` `Class Imbalance`
+
+---
+
+### 🏦 [Credit Risk API](https://github.com/RaNurbekov/credit-risk-api)
+> **Полный цикл кредитного скоринга: от Kaggle-датасета до задеплоенного REST API**
+
+Модель LightGBM обёрнута в FastAPI-микросервис с Docker. Реализован **Explainable AI (SHAP)** — каждый отказ по кредиту сопровождается топ-5 факторов принятия решения. Логирование каждого предсказания в SQLite. Live API задеплоен на Render.
+
+🔗 [Live Demo](https://credit-scoring-ml-api.onrender.com/predict)
+
+`LightGBM` `SHAP` `FastAPI` `Docker` `SQLite` `Render`
+
+---
+
+### 💬 [Bank AI Assistant (True RAG)](https://github.com/RaNurbekov/bank-ai-assistant)
+> **Интеллектуальный консультант с семантическим поиском по корпоративной базе знаний**
+
+Полноценная RAG-архитектура: документы → чанкинг → HuggingFace Embeddings → **Qdrant** (векторная БД) → Llama 3 (Groq). Жёсткий Hallucination Prevention: бот отвечает строго по документам, показывая источники через Expander.
+
+`Qdrant` `RAG` `LangChain` `Llama-3` `HuggingFace Embeddings` `Streamlit`
+
+---
+
+### 💳 [Bank Transaction Categorizer](https://github.com/RaNurbekov/bank-transaction-categorizer)
+> **NLP-система категоризации "грязных" банковских транзакций (PFM)**
+
+Fine-Tuning многоязычного **DistilBERT** (Hugging Face) на задачу классификации 5 банковских категорий. Модель устойчива к опечаткам, латинице и шумам (ID терминалов). Inference UI с Confidence Score на Streamlit.
+
+`DistilBERT` `PyTorch` `Hugging Face` `Fine-Tuning` `NLP` `Streamlit`
+
+---
+
+### 👁️ [YOLOv8 Object Detection](https://github.com/RaNurbekov/yolov8-object-detection)
+> **Веб-приложение для видеоаналитики и детектирования объектов в реальном времени**
+
+Zero-Shot Inference на предобученных весах MS COCO (80 классов). Поддержка масштабирования от `yolov8n` (Nano, real-time) до `yolov8x` (eXtra Large). Автоматический парсинг Bounding Boxes и генерация бизнес-статистики.
+
+`YOLOv8` `Ultralytics` `OpenCV` `Zero-Shot` `Streamlit`
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![RaNurbekov's GitHub Stats](https://github-readme-stats.vercel.app/api?username=RaNurbekov&show_icons=true&theme=dark&hide_border=true&count_private=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RaNurbekov&layout=compact&theme=dark&hide_border=true)
+
+</div>
+
+---
+
+## 📫 Связаться со мной
+
+| | |
+|---|---|
+| 📧 Email | [nurbekovrashidjob@gmail.com](mailto:nurbekovrashidjob@gmail.com) |
+| 💬 Telegram | [@Ytyglika](https://t.me/Ytyglika) |
+| 📍 Локация | Алматы, Казахстан |
+
+---
+
+<div align="center">
+  <i>"Данные без действия — это просто числа. Я строю системы, которые принимают решения."</i>
+</div>
