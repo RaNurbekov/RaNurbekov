@@ -2,7 +2,7 @@
 
 # Привет, я Рашид 👋
 
-### ML Engineer | Fintech & Generative AI
+### Junior ML Engineer | Fintech & Generative AI
 
 *Строю ML-сервисы для финтеха — от обучения модели до деплоя в Docker*
 
