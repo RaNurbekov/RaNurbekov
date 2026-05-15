@@ -1,12 +1,12 @@
-<div align="center">
-
-# Привет, я Рашид 👋
-
-### Junior ML Engineer | Fintech & Generative AI
+text
 
 <div align="center">
 
-*Строю ML-сервисы для финтеха — от обучения модели до деплоя в Docker*
+# Hi, I'm Rashid 👋
+
+### ML Engineer | Fintech & Generative AI
+
+*Building production ML systems for financial services — from model training to Docker deployment*
 
 [![Profile Views](https://komarev.com/ghpvc/?username=RaNurbekov&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/RaNurbekov)
 [![Telegram](https://img.shields.io/badge/Telegram-@Ytyglika-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/Ytyglika)
@@ -16,20 +16,20 @@
 
 ---
 
-## 👨‍💻 Обо мне
+## 👨‍💻 About Me
 
-Я ML-инженер с фокусом на **финтех-продукты** и **Generative AI**. Специализируюсь на полном цикле разработки: глубокий анализ данных → обучение и оптимизация моделей → production-деплой через FastAPI + Docker.
+I'm an ML Engineer focused on **Fintech products** and **Generative AI**. I specialize in the full development cycle: data analysis → model training & optimization → production deployment via FastAPI + Docker.
 
-Не просто обучаю модели в Jupyter — строю надёжные, интерпретируемые и масштабируемые пайплайны, готовые к реальному бизнесу.
+I don't just train models in Jupyter — I build reliable, interpretable and scalable ML pipelines ready for real business use.
 
-**Ключевые области:**
-- 🏦 **Fintech ML** — кредитный скоринг, антифрод, PFM-категоризация транзакций
-- 🤖 **LLM & RAG** — Fine-Tuning (LoRA/PEFT), RAG-архитектуры, AI-агенты банковской поддержки
-- ⚙️ **MLOps** — MLflow, Evidently AI, Kafka Streaming, A/B тестирование, Docker
+**Core expertise:**
+- 🏦 **Fintech ML** — credit scoring, fraud detection, PFM transaction categorization
+- 🤖 **LLM & RAG** — Fine-Tuning (LoRA/PEFT), RAG architectures, AI bank support agents
+- ⚙️ **MLOps** — MLflow, Evidently AI, Kafka Streaming, A/B testing, Docker
 
 ---
 
-## 🛠 Технологический стек
+## 🛠 Tech Stack
 
 **Machine Learning**
 
@@ -59,10 +59,10 @@
 
 ---
 
-## 💼 Портфолио
+## 💼 Projects
 
 ### 🛡️ [fraud-detection-api](https://github.com/RaNurbekov/fraud-detection-api)
-> **Гибридная микросервисная система детектирования мошенничества в реальном времени**
+> **Hybrid real-time fraud detection microservice**
 
 Двухслойная архитектура: **Redis Velocity Check** (защита от брутфорса) + **LightGBM** (поведенческие паттерны). Встроенный **A/B Testing Router** распределяет трафик 80/20 между Champion и Challenger моделями для безопасного тестирования гипотез в продакшне.
 
@@ -71,9 +71,9 @@
 ---
 
 ### 🏦 [credit-risk-api](https://github.com/RaNurbekov/credit-scoring-ml-api.)
-> **Полный MLOps-цикл кредитного скоринга: от Kaggle-датасета до задеплоенного REST API**
+> **Full MLOps pipeline for bank credit scoring — from Kaggle dataset to deployed REST API**
 
-LightGBM обёрнут в FastAPI-микросервис. **MLflow Model Registry** — модель динамически загружается по RUN_ID без изменения кода. **SHAP TreeExplainer** — каждый отказ сопровождается топ-5 факторами решения (требование банковских регуляторов). **Evidently AI** — мониторинг Data Drift. Логирование каждого предсказания в SQLite.
+LightGBM обёрнут в FastAPI-микросервис. **MLflow Model Registry** — модель динамически загружается по RUN_ID. **SHAP TreeExplainer** — каждый отказ сопровождается топ-5 факторами решения (требование банковских регуляторов). **Evidently AI** — мониторинг Data Drift. Логирование каждого предсказания в SQLite.
 
 🔗 [Live Demo](https://credit-scoring-ml-api.onrender.com/predict)
 
@@ -82,7 +82,7 @@ LightGBM обёрнут в FastAPI-микросервис. **MLflow Model Regist
 ---
 
 ### 🌊 [kafka-fraud-streaming](https://github.com/RaNurbekov/kafka_anti_fraud)
-> **Потоковая архитектура для обнаружения мошенничества на Apache Kafka**
+> **Real-time fraud detection streaming pipeline on Apache Kafka**
 
 Event-Driven пайплайн: Producer генерирует поток транзакций → Kafka Broker → Consumer Group с детектором. Демонстрация **горизонтального масштабирования** — при запуске нескольких Consumer инстансов Kafka автоматически перераспределяет нагрузку (Rebalance). Готов к интеграции с `fraud-detection-api` для ML-инференса.
 
@@ -91,7 +91,7 @@ Event-Driven пайплайн: Producer генерирует поток тран
 ---
 
 ### 💬 [bank-ai-assistant](https://github.com/RaNurbekov/llm_bot-ai_bank_assistant-)
-> **Интеллектуальный консультант с семантическим поиском по корпоративной базе знаний**
+> **Intelligent bank support assistant with semantic search over knowledge base (RAG)**
 
 Полноценная **RAG-архитектура**: документы → чанкинг → HuggingFace Embeddings → **Qdrant** (векторная БД) → Llama 3 (Groq). Жёсткий Hallucination Prevention: бот отвечает строго по документам, показывая источники через Expander UI.
 
@@ -100,18 +100,18 @@ Event-Driven пайплайн: Producer генерирует поток тран
 ---
 
 ### 🧠 [bank-llm-finetuning](https://github.com/RaNurbekov/bank_llm_finetuning)
-> **Parameter-Efficient Fine-Tuning LLM для банковской поддержки (PEFT/LoRA)**
+> **Parameter-Efficient Fine-Tuning of LLM for bank support (PEFT/LoRA)**
 
-Fine-Tuning **TinyLlama-1.1B** с использованием **LoRA-адаптеров** — обучалось всего **1,126,400 параметров (0.10%)** вместо полной модели. Cloud-to-Local Pipeline: обучение на GPU (Google Colab T4) → инференс на CPU через `PeftModel`. Честный разбор Lessons Learned: Underfitting, галлюцинации и пути к production-качеству.
+Fine-Tuning **TinyLlama-1.1B** с использованием **LoRA-адаптеров** — обучалось всего **1,126,400 параметров (0.10%)** вместо полной модели. Cloud-to-Local Pipeline: обучение на GPU (Google Colab T4) → инференс на CPU через `PeftModel`.
 
-> 💡 **RAG vs Fine-Tuning:** `bank-ai-assistant` использует внешнюю базу знаний (RAG), этот проект "зашивает" знания в веса модели (Fine-Tuning) — два подхода к одной задаче.
+> 💡 **RAG vs Fine-Tuning:** `bank-ai-assistant` использует внешнюю базу знаний (RAG), этот проект "зашивает" знания в веса модели — два подхода к одной задаче.
 
 `TinyLlama` `LoRA` `PEFT` `SFTTrainer` `PyTorch` `HuggingFace` `Google Colab`
 
 ---
 
 ### 💳 [bank-transaction-categorizer](https://github.com/RaNurbekov/Transaction-Categorizer-Deep-Learning-PyTorch-Hugging-Face-NLP-)
-> **NLP-система категоризации "грязных" банковских транзакций (PFM)**
+> **NLP system for "dirty" bank transaction categorization (PFM)**
 
 Fine-Tuning многоязычного **DistilBERT** на классификацию 5 банковских категорий. Модель устойчива к опечаткам, латинице и шумам (ID терминалов). Inference UI с Confidence Score на Streamlit.
 
@@ -120,9 +120,9 @@ Fine-Tuning многоязычного **DistilBERT** на классифика�
 ---
 
 ### 👁️ [yolov8-object-detection](https://github.com/RaNurbekov/computer_vision_simple_sample)
-> **Веб-приложение для детектирования объектов в реальном времени**
+> **Real-time object detection web application (YOLOv8)**
 
-Zero-Shot Inference на предобученных весах MS COCO (80 классов). Поддержка масштабирования от `yolov8n` (Nano, real-time) до `yolov8x` (eXtra Large). Автоматический парсинг Bounding Boxes и генерация статистики.
+Zero-Shot Inference на предобученных весах MS COCO (80 классов). Поддержка масштабирования от `yolov8n` (Nano) до `yolov8x` (eXtra Large). Автоматический парсинг Bounding Boxes и генерация статистики.
 
 `YOLOv8` `Ultralytics` `OpenCV` `Zero-Shot` `Streamlit`
 
@@ -145,16 +145,16 @@ Zero-Shot Inference на предобученных весах MS COCO (80 кл�
 
 ---
 
-## 📫 Связаться со мной
+## 📫 Get in Touch
 
 | | |
 |---|---|
 | 📧 Email | [nurbekovrashidjob@gmail.com](mailto:nurbekovrashidjob@gmail.com) |
 | 💬 Telegram | [@Ytyglika](https://t.me/Ytyglika) |
-| 📍 Локация | Алматы, Казахстан 🇰🇿 |
+| 📍 Location | Almaty, Kazakhstan 🇰🇿 |
 
 ---
 
 <div align="center">
-  <i>"Данные без действия — это просто числа. Я строю системы, которые принимают решения."</i>
+  <i>"Data without action is just numbers. I build systems that make decisions."</i>
 </div>
