@@ -150,7 +150,7 @@ Zero-Shot Inference на предобученных весах MS COCO (80 кл�
 | | |
 |---|---|
 | 📧 Email | [nurbekovrashidjob@gmail.com](mailto:nurbekovrashidjob@gmail.com) |
-| 💬 Telegram | @RaNurbek |
+| 💬 Telegram | t.me/RaNurbek|
 | 📍 Location | Almaty, Kazakhstan 🇰🇿 |
 
 ---
