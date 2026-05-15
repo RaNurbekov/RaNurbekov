@@ -6,10 +6,6 @@
 
 <div align="center">
 
-# Привет, я Рашид 👋
-
-### ML Engineer | Fintech & Generative AI
-
 *Строю ML-сервисы для финтеха — от обучения модели до деплоя в Docker*
 
 [![Profile Views](https://komarev.com/ghpvc/?username=RaNurbekov&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/RaNurbekov)
