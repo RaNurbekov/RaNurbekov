@@ -4,7 +4,7 @@ text
 
 # Hi, I'm Rashid 👋
 
-### junior ML Engineer | Fintech & Generative AI
+### Junior ML Engineer | Fintech & Generative AI
 
 *Building production ML systems for financial services — from model training to Docker deployment*
 
