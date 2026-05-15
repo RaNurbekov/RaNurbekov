@@ -4,7 +4,7 @@ text
 
 # Hi, I'm Rashid 👋
 
-### ML Engineer | Fintech & Generative AI
+### junior ML Engineer | Fintech & Generative AI
 
 *Building production ML systems for financial services — from model training to Docker deployment*
 
@@ -18,7 +18,7 @@ text
 
 ## 👨‍💻 About Me
 
-I'm an ML Engineer focused on **Fintech products** and **Generative AI**. I specialize in the full development cycle: data analysis → model training & optimization → production deployment via FastAPI + Docker.
+I'm an Junior ML Engineer focused on **Fintech products** and **Generative AI**. I specialize in the full development cycle: data analysis → model training & optimization → production deployment via FastAPI + Docker.
 
 I don't just train models in Jupyter — I build reliable, interpretable and scalable ML pipelines ready for real business use.
 
