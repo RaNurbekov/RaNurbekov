@@ -1,5 +1,3 @@
-text
-
 <div align="center">
 
 # Hi, I'm Rashid 👋
@@ -24,7 +22,7 @@ I don't just train models in Jupyter — I build reliable, interpretable and sca
 
 **Core expertise:**
 - 🏦 **Fintech ML** — credit scoring, fraud detection, PFM transaction categorization
-- 🤖 **LLM & RAG** — Fine-Tuning (LoRA/PEFT), RAG architectures, AI bank support agents
+- 🤖 **LLM & RAG** — Fine-Tuning (LoRA/PEFT), RAG architectures, voice AI assistants
 - ⚙️ **MLOps** — MLflow, Evidently AI, Kafka Streaming, A/B testing, Docker
 
 ---
@@ -40,11 +38,12 @@ I don't just train models in Jupyter — I build reliable, interpretable and sca
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![SHAP](https://img.shields.io/badge/SHAP-Explainable_AI-8A2BE2?style=for-the-badge)
 
-**LLM & Fine-Tuning**
+**LLM & Voice AI**
 
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
 ![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge&logoColor=white)
 ![LoRA](https://img.shields.io/badge/PEFT_LoRA-Fine--Tuning-FF6B6B?style=for-the-badge)
+![Whisper](https://img.shields.io/badge/Whisper_v3-STT-00A67E?style=for-the-badge)
 ![Groq](https://img.shields.io/badge/Groq_API_(Llama_3)-F55036?style=for-the-badge&logoColor=white)
 
 **Backend & MLOps**
@@ -99,6 +98,17 @@ Event-Driven пайплайн: Producer генерирует поток тран
 
 ---
 
+### 🎙️ [voice-bank-assistant](https://github.com/RaNurbekov/ai_voice_assistant)
+> **Full voice pipeline: Speech-to-Text → LLM → Text-to-Speech with conversation memory**
+
+Полный голосовой пайплайн: **Whisper Large v3** (Groq) транскрибирует речь → **Llama 3.3-70B** генерирует ответ с памятью всего диалога → **gTTS** синтезирует голос с автовоспроизведением. System Prompt оптимизирован под TTS-сценарий: краткие ответы без списков, как живой оператор по телефону.
+
+> 💡 **Эволюция:** текстовый чат (`bank-ai-assistant`) → голосовой диалог (этот проект).
+
+`Whisper v3` `Llama-3.3-70B` `gTTS` `Groq` `Conversation Memory` `Streamlit`
+
+---
+
 ### 🧠 [bank-llm-finetuning](https://github.com/RaNurbekov/bank_llm_finetuning)
 > **Parameter-Efficient Fine-Tuning of LLM for bank support (PEFT/LoRA)**
 
@@ -150,7 +160,7 @@ Zero-Shot Inference на предобученных весах MS COCO (80 кл�
 | | |
 |---|---|
 | 📧 Email | [nurbekovrashidjob@gmail.com](mailto:nurbekovrashidjob@gmail.com) |
-| 💬 Telegram | t.me/RaNurbek|
+| 💬 Telegram | [@Ytyglika](https://t.me/Ytyglika) |
 | 📍 Location | Almaty, Kazakhstan 🇰🇿 |
 
 ---
