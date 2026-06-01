@@ -7,7 +7,7 @@
 *Building production ML systems for financial services — from model training to Docker deployment*
 
 [![Profile Views](https://komarev.com/ghpvc/?username=RaNurbekov&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/RaNurbekov)
-[![Telegram](https://img.shields.io/badge/Telegram-@Ytyglika-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/Ytyglika)
+[![Telegram](https://img.shields.io/badge/Telegram-@RaNurbek-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/RaNurbel)
 [![Email](https://img.shields.io/badge/Email-nurbekovrashidjob@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:nurbekovrashidjob@gmail.com)
 
 </div>
