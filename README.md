@@ -7,7 +7,7 @@
 *Building production ML systems for financial services — from model training to Docker deployment*
 
 [![Profile Views](https://komarev.com/ghpvc/?username=RaNurbekov&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/RaNurbekov)
-[![Telegram](https://img.shields.io/badge/Telegram-@RaNurbek-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/RaNurbek)
+[![Telegram](https://img.shields.io/badge/Telegram-@Ytyglika-2CA5E0?style=flat&logo=telegram&logoColor=white)](https://t.me/Ytyglika)
 [![Email](https://img.shields.io/badge/Email-nurbekovrashidjob@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:nurbekovrashidjob@gmail.com)
 
 </div>
@@ -21,8 +21,8 @@ I'm an ML Engineer focused on **Fintech products** and **Generative AI**. I spec
 I don't just train models in Jupyter — I build reliable, interpretable and scalable ML pipelines ready for real business use.
 
 **Core expertise:**
-- 🏦 **Fintech ML** — credit scoring, fraud detection (GNN + classical ML), PFM transaction categorization
-- 🤖 **LLM & RAG** — Fine-Tuning (LoRA/PEFT), RAG architectures, voice AI assistants
+- 🏦 **Fintech ML** — credit scoring, fraud detection (GNN + classical ML), PFM analytics
+- 🤖 **LLM & Agents** — Fine-Tuning (LoRA/PEFT), RAG, Voice AI, LangGraph ReAct Agents
 - ⚙️ **MLOps** — MLflow, Evidently AI, Kafka Streaming, A/B testing, Docker
 
 ---
@@ -42,6 +42,7 @@ I don't just train models in Jupyter — I build reliable, interpretable and sca
 **LLM & Voice AI**
 
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-ReAct_Agent-1C3C3C?style=for-the-badge)
 ![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge&logoColor=white)
 ![LoRA](https://img.shields.io/badge/PEFT_LoRA-Fine--Tuning-FF6B6B?style=for-the-badge)
 ![Whisper](https://img.shields.io/badge/Whisper_v3-STT-00A67E?style=for-the-badge)
@@ -66,54 +67,82 @@ I don't just train models in Jupyter — I build reliable, interpretable and sca
 
 Транзакции представлены как граф: 590K узлов, 493K рёбер. **GCN видит транзакцию в контексте её связей** — если карта участвовала в подозрительных операциях, модель "заражает" соседей подозрением. Именно так работают антифрод системы Visa и Mastercard. AUC-ROC: 0.78, Fraud Recall: 62%.
 
-> 💡 **GNN vs LightGBM:** классический ML смотрит на транзакцию изолированно, GNN видит коллаборативный фрод через топологию графа.
+🔗 [API](https://fraud-gnn-1.onrender.com) | [Graph Visualizer](https://fraud-gnn-j6nh9vg4mb4tdabnshx2n3.streamlit.app)
 
-`PyTorch Geometric` `GCNConv` `NetworkX` `FastAPI` `IEEE-CIS Dataset` `Graph ML`
+`PyTorch Geometric` `GCNConv` `NetworkX` `FastAPI` `Streamlit` `Render`
 
 ---
 
 ### 🛡️ [fraud-detection-api](https://github.com/RaNurbekov/fraud-detection-api)
 > **Hybrid real-time fraud detection microservice**
 
-Двухслойная архитектура: **Redis Velocity Check** (защита от брутфорса) + **LightGBM** (поведенческие паттерны). Встроенный **A/B Testing Router** распределяет трафик 80/20 между Champion и Challenger моделями для безопасного тестирования гипотез в продакшне.
+Двухслойная архитектура: **Redis Velocity Check** (защита от брутфорса) + **LightGBM** (поведенческие паттерны). Встроенный **A/B Testing Router** распределяет трафик 80/20 между Champion и Challenger моделями.
 
-`LightGBM` `Redis Feature Store` `Docker Compose` `FastAPI` `A/B Testing` `Class Imbalance`
+🔗 [Live API](https://fraud-detection-api-1-hf78.onrender.com)
+
+`LightGBM` `Redis Feature Store` `Docker Compose` `FastAPI` `A/B Testing` `Render`
 
 ---
 
 ### 🏦 [credit-risk-api](https://github.com/RaNurbekov/credit-scoring-ml-api.)
 > **Full MLOps pipeline for bank credit scoring — from Kaggle dataset to deployed REST API**
 
-LightGBM обёрнут в FastAPI-микросервис. **MLflow Model Registry** — модель динамически загружается по RUN_ID. **SHAP TreeExplainer** — каждый отказ сопровождается топ-5 факторами решения (требование банковских регуляторов). **Evidently AI** — мониторинг Data Drift. Логирование каждого предсказания в SQLite.
+LightGBM + FastAPI. **MLflow Model Registry** — динамическая загрузка модели по RUN_ID. **SHAP** — топ-5 факторов решения. **Evidently AI** — мониторинг Data Drift. SQLite аудит-лог.
 
-🔗 [Live Demo](https://credit-scoring-ml-api.onrender.com/predict)
+🔗 [Live API](https://credit-scoring-ml-api.onrender.com/predict)
 
-`LightGBM` `MLflow` `SHAP` `Evidently AI` `FastAPI` `Docker` `SQLite` `Render`
+`LightGBM` `MLflow` `SHAP` `Evidently AI` `FastAPI` `Docker` `Render`
+
+---
+
+### 💰 [pfm-ai-assistant](https://github.com/RaNurbekov/pfm_ai_assistant)
+> **End-to-end AI Personal Finance Manager — localized for Kazakhstan 🇰🇿**
+
+NLP категоризация транзакций → Anomaly Detection → Prophet Forecast → Voice Assistant → PDF Reports → Telegram Bot. Симуляция KZ клиентов (Glovo, Kaspi, inDrive). Мультивалютность (8 валют).
+
+🔗 [Live Demo](https://pfm-ai-assistant.streamlit.app)
+
+`Prophet` `Evidently AI` `Whisper` `Llama-3` `Telegram Bot` `Streamlit`
 
 ---
 
 ### 🌊 [kafka-fraud-streaming](https://github.com/RaNurbekov/kafka-fraud-streaming)
 > **Real-time fraud detection streaming pipeline on Apache Kafka**
 
-Event-Driven пайплайн: Producer генерирует поток транзакций → Kafka Broker → Consumer Group с детектором. Демонстрация **горизонтального масштабирования** — при запуске нескольких Consumer инстансов Kafka автоматически перераспределяет нагрузку (Rebalance).
+Event-Driven пайплайн: Producer → Kafka Broker → Consumer Group → **LightGBM ML API**. Consumer вызывает `fraud-detection-api` для реального ML инференса вместо Rule-Based логики.
 
-`Apache Kafka` `Zookeeper` `Docker Compose` `Consumer Groups` `Event-Driven`
+`Apache Kafka` `Zookeeper` `Docker Compose` `Consumer Groups` `ML Integration`
 
 ---
 
-### 💬 [bank-ai-assistant](https://github.com/RaNurbekov/llm_bot-ai_bank_assistant-)
+### 🤖 [financial-ai-agent](https://github.com/RaNurbekov/financial-advisor-bot)
+> **Autonomous Financial AI Agent with 5 tools (LangGraph ReAct)**
+
+LangGraph ReAct агент с инструментами: DuckDuckGo Search, Loan Calculator, Deposit Calculator, Currency Converter, Fraud Risk Checker. Сам решает какой инструмент вызвать.
+
+🔗 [Live Demo](https://financial-advisor-bot-ilewnbcmhlsk5i2kote5xr.streamlit.app)
+
+`LangGraph` `LangChain` `Llama-3.3-70B` `Tool Calling` `Groq` `Streamlit`
+
+---
+
+### 💬 [bank-ai-assistant](https://github.com/RaNurbekov/bank-ai-assistant)
 > **Intelligent bank support assistant with semantic search over knowledge base (RAG)**
 
-Полноценная **RAG-архитектура**: документы → чанкинг → HuggingFace Embeddings → **Qdrant** (векторная БД) → Llama 3 (Groq). Жёсткий Hallucination Prevention: бот отвечает строго по документам, показывая источники через Expander UI.
+Полноценная **RAG-архитектура**: документы → чанкинг → HuggingFace Embeddings → **Qdrant** → Llama 3. Hallucination Prevention: бот отвечает строго по документам.
+
+🔗 [Live Demo](https://bank-ai-assistant-82mcu6adkv2vqviwhpzft6.streamlit.app)
 
 `Qdrant` `RAG` `LangChain` `Llama-3` `HuggingFace Embeddings` `Streamlit`
 
 ---
 
 ### 🎙️ [voice-bank-assistant](https://github.com/RaNurbekov/ai_voice_assistant)
-> **Full voice pipeline: Speech-to-Text → LLM → Text-to-Speech with conversation memory**
+> **Full voice pipeline: Speech-to-Text → LLM → Text-to-Speech**
 
-Полный голосовой пайплайн: **Whisper Large v3** транскрибирует речь → **Llama 3.3-70B** генерирует ответ с памятью всего диалога → **gTTS** синтезирует голос с автовоспроизведением. System Prompt оптимизирован под TTS-сценарий: краткие ответы без списков, как живой оператор по телефону.
+**Whisper Large v3** → **Llama 3.3-70B** → **gTTS**. Память всего диалога. System Prompt оптимизирован под TTS: краткие ответы как живой оператор по телефону.
+
+🔗 [Live Demo](https://aivoiceassistant-9uqgi56eevhbe266yyntfz.streamlit.app)
 
 `Whisper v3` `Llama-3.3-70B` `gTTS` `Groq` `Conversation Memory` `Streamlit`
 
@@ -122,9 +151,9 @@ Event-Driven пайплайн: Producer генерирует поток тран
 ### 🧠 [bank-llm-finetuning](https://github.com/RaNurbekov/bank-llm-finetuning)
 > **Parameter-Efficient Fine-Tuning of LLM for bank support (PEFT/LoRA)**
 
-Fine-Tuning **TinyLlama-1.1B** с использованием **LoRA-адаптеров** — обучалось всего **1,126,400 параметров (0.10%)** вместо полной модели. Cloud-to-Local Pipeline: обучение на GPU (Google Colab T4) → инференс на CPU.
+Fine-Tuning **TinyLlama-1.1B** — обучалось **1,126,400 параметров (0.10%)**. Cloud-to-Local Pipeline: Colab T4 GPU → CPU inference. Streamlit Chat UI.
 
-> 💡 **RAG vs Fine-Tuning:** `bank-ai-assistant` использует внешнюю базу знаний, этот проект "зашивает" знания в веса модели — два подхода к одной задаче.
+🔗 [Live Demo](https://bank-llm-finetuning.streamlit.app)
 
 `TinyLlama` `LoRA` `PEFT` `SFTTrainer` `PyTorch` `HuggingFace`
 
@@ -133,27 +162,31 @@ Fine-Tuning **TinyLlama-1.1B** с использованием **LoRA-адапт
 ### 💳 [bank-transaction-categorizer](https://github.com/RaNurbekov/Transaction-Categorizer-Deep-Learning-PyTorch-Hugging-Face-NLP-)
 > **NLP system for "dirty" bank transaction categorization (PFM)**
 
-Fine-Tuning многоязычного **DistilBERT** на классификацию 5 банковских категорий. Модель устойчива к опечаткам, латинице и шумам (ID терминалов). Inference UI с Confidence Score на Streamlit.
+Fine-Tuning многоязычного **DistilBERT** на 5 банковских категорий. Устойчив к опечаткам, латинице и шумам POS-терминалов. Confidence Score UI.
 
 `DistilBERT` `PyTorch` `Hugging Face` `Fine-Tuning` `NLP` `Streamlit`
 
 ---
 
 ### 🔥 [pytorch-bank-churn](https://github.com/RaNurbekov/pytorch-bank-churn)
-> **Bank churn prediction with custom PyTorch MLP from scratch**
+> **Bank churn prediction — custom PyTorch MLP from scratch | ROC-AUC: 0.9685**
 
-Полносвязная нейросеть (MLP) реализована на **чистом PyTorch** без высокоуровневых оберток. Ручная реализация Training Loop, Forward/Backward Pass, `DataLoader` с батч-обработкой тензоров. Accuracy: **94.5%** на тестовой выборке.
+Кастомный Training Loop на чистом PyTorch. BatchNorm + Dropout. Обучен на реальном датасете (10,127 клиентов). Бизнес-рекомендации по уровню риска.
 
-`PyTorch` `MLP` `Custom Training Loop` `Binary Classification`
+🔗 [Live Demo](https://pytorch-bank-churn-eopnllazuzaixg9rlwbuvh.streamlit.app)
+
+`PyTorch` `MLP` `BatchNorm` `ROC-AUC 0.97` `Streamlit`
 
 ---
 
-### 👁️ [yolov8-object-detection](https://github.com/RaNurbekov/computer_vision_simple_sample)
+### 👁️ [yolov8-object-detection](https://github.com/RaNurbekov/-yolov8-object-detection)
 > **Real-time object detection web application (YOLOv8)**
 
-Zero-Shot Inference на предобученных весах MS COCO (80 классов). Поддержка масштабирования от `yolov8n` (Nano) до `yolov8x` (eXtra Large). Автоматический парсинг Bounding Boxes и генерация статистики.
+Zero-Shot Inference на MS COCO (80 классов). Выбор модели от Nano до XLarge. Confidence slider. Plotly analytics dashboard.
 
-`YOLOv8` `Ultralytics` `OpenCV` `Zero-Shot` `Streamlit`
+🔗 [Live Demo](https://5jqwsy2zmlp6dmztnkhtwk.streamlit.app)
+
+`YOLOv8` `Ultralytics` `OpenCV` `Zero-Shot` `Plotly` `Streamlit`
 
 ---
 
@@ -179,7 +212,7 @@ Zero-Shot Inference на предобученных весах MS COCO (80 кл�
 | | |
 |---|---|
 | 📧 Email | [nurbekovrashidjob@gmail.com](mailto:nurbekovrashidjob@gmail.com) |
-| 💬 Telegram | [@RaNurbek](https://t.me/@RaNurbek) |
+| 💬 Telegram | [@Ytyglika](https://t.me/Ytyglika) |
 | 📍 Location | Almaty, Kazakhstan 🇰🇿 |
 
 ---
